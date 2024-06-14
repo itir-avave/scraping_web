@@ -208,8 +208,8 @@ print(df_effects.head())
 """# Analyse des tables effects et medications"""
 
 # Les données depuis les fichiers CSV
-df_medications = pd.read_csv('/content/medications.csv')
-df_effects = pd.read_csv('/content/effects.csv')
+df_medications = pd.read_csv('medications.csv')
+df_effects = pd.read_csv('effects.csv')
 
 # Préparation des données pour les graphiques
 def prepare_data():
@@ -233,9 +233,9 @@ nltk.download('omw-1.4')
 nltk.download('vader_lexicon')
 
 # Chargement des données depuis les fichiers CSV
-df_posts = pd.read_csv('/content/forum_posts_30_pages.csv')
-df_medications = pd.read_csv('/content/medications.csv')
-df_effects = pd.read_csv('/content/effects.csv')
+df_posts = pd.read_csv('forum_posts_30_pages.csv')
+df_medications = pd.read_csv('medications.csv')
+df_effects = pd.read_csv('effects.csv')
 
 # Les valeurs de la colonne 'Content' en chaînes de caractères
 df_posts['Content'] = df_posts['Content'].astype(str)
@@ -370,8 +370,8 @@ df_posts['sentiment_class'] = df_posts['sentiment'].apply(classify_sentiment)
 """# Dash"""
 
 # les images
-wordcloud_path = "/content/wordcloud.png"
-logo_path = "/content/logo.png"
+wordcloud_path = "wordcloud.png"
+logo_path = "logo.png"
 
 # Convert images to base64
 encoded_wordcloud = base64.b64encode(open(wordcloud_path, 'rb').read()).decode('ascii')
