@@ -358,4 +358,4 @@ def update_forum_graphs(pathname):
 
 # Exécutation l'application
 nest_asyncio.apply()
-app.run_server(mode='inline', height=1000)
+app.run_server(host='0.0.0.0', port=8050)
