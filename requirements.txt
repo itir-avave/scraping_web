@@ -8,3 +8,6 @@ matplotlib
 requests
 beautifulsoup4
 gunicorn
+Flask
+Werkzeug
+lxml
